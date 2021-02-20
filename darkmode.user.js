@@ -27,8 +27,9 @@
         $('#boxChat').before($(`<div style="text-align:bottom">
 <input id="scroll" name="scroll" style="width:117px;" type="range"; min:0; max:100; value:15; position: relative;>
 <label for="scroll" style="all: initial; color:white; position: absolute; padding-top: 5px; font-family:calibri; width:100%;">Canvas Darkness: 15</label><br>`));
-        $('#boxMessages').css('margin-top', '20px');
-        $('#boxMessages').css('height', 'calc(100% - 87px)');
+        $('#boxMessages')
+            .css('margin-top', '20px')
+            .css('height', 'calc(100% - 87px)');
         $("body").css('background-size', 'auto');
         var darkness = localStorage.getItem('darkness');
         if (darkness == null){ darkness = 15; }

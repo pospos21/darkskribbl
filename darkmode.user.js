@@ -27,7 +27,7 @@
 
     async function main(){
 
-        $('#containerBoard').append($(`<div id="darken" name="darken" style="width:100%; height:100%; top:0; background-color:black; border:black; pointer-events:none; position:absolute; opacity:0.15">`));
+        $('#containerBoard').append($(`<div id="darken" name="darken" style="width:100%; height:100%; top:0; background-color:black; border:black; pointer-events:none; z-index:0; position:absolute; opacity:0.15">`));
         $('#boxChat').before($(`<div style="text-align:bottom">
 <input id="scroll" name="scroll" style="width:117px;" type="range"; min:0; max:100; value:15; position: relative;>
 <label for="scroll" style="all: initial; color:white; position: absolute; padding-top: 5px; font-family:calibri; width:100%;">Canvas Darkness: 15</label><br>`));
@@ -131,6 +131,11 @@
         $("#containerChat").css('background', 'transparent');
         $("#containerFreespace").css('background', 'transparent');
         $(".brushSize").css('background-color','transparent');
+        $("#rateDrawing").css("z-index","900");
+        $("#overlay")
+            .css("z-index","1")
+            .css("background","rgba(0,0,0,.6)")
+            .find(".content").css("z-index","999");
 
         await delay(400);
         fadeout(400);

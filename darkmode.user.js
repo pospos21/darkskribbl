@@ -21,9 +21,8 @@
         }
     }, 4);
 
-    $(document).ready(() => {
-        main();
-    });
+    $(document).ready(() => { main(); });
+    $(window).on("beforeunload", function(){ $(window).scrollTop(0); });
 
     async function main(){
 

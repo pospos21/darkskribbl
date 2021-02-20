@@ -141,6 +141,7 @@
         fadeout(400);
 
         setInterval(function(){
+            $('#overlay .revealContainer').children().css('color', 'rgb(245,245,245)');
             $('.player').css('background', 'transparent');
             $('#containerGamePlayers').find('.rank, .name, .score').css('color', 'white');
             $('.name:contains(" (You)")').css('color', 'rgb(75, 160, 255)');

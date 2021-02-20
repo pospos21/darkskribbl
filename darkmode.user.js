@@ -14,12 +14,10 @@
 (function(){
     var elem;
     var accessory = 'black';
-    let loop = setInterval(function(){
-        if ($('body').css('background-image') == 'url("https://skribbl.io/res/background.png")'){
-            elem = $('<div id="overlay" style="background-color:black; opacity:1; position:fixed; pointer-events:none; top:0; z-index: 99999"></div>').appendTo(document.body);
-            clearInterval(loop);
-        }
-    }, 4);
+    $.initialize('body', function(){
+        $(this).css('background-color', accessory);
+        elem = $('<div id="overlay" style="background-color:black; opacity:1; position:fixed; pointer-events:none; top:0; z-index: 99999"></div>').appendTo(document.body);
+    });
 
     $(document).ready(() => { main(); });
     $(window).on("beforeunload", function(){ $(window).scrollTop(0); });

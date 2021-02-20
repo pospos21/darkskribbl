@@ -119,12 +119,10 @@
         $(".gameHeader").css('background-color', 'transparent');
         $("#timer").css('background', 'transparent');
         $('.modal-content').css('background-color', accessory);
-        $('.score').css('color', 'white');
         $('.rank').css('color', 'white');
         $('.tool').css('background-color', 'transparent');
         $("#boxChat").css('background', 'transparent');
         $(".size").css('background-color','white');
-        $('.player').css('background', 'transparent');
         $('.lobbyContent').css('background-color', 'transparent');
         $('.invite-overlay').remove();
         $('#invite').css('background-color', 'transparent');
@@ -141,7 +139,6 @@
         fadeout(400);
 
         setInterval(function(){
-            $('#overlay .revealContainer').children().css('color', 'rgb(240,240,240)');
             $('.player').css('background', 'transparent');
             $('#containerGamePlayers').find('.rank, .name, .score').css('color', 'white');
             $('.name:contains(" (You)")').css('color', 'rgb(75, 160, 255)');

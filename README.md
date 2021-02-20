@@ -10,4 +10,4 @@ To install, simply get the Tampermonkey extension for Chrome and [click here!](h
 
 05 Dec 2020: Added an adjustable dark layer over the canvas, so you don't have to stare at a bright white rectangle all game.
 
-13 Feb 2020: Added fading-in animation on loading page and fixed minor issues.
+20 Feb 2020: Added fading-in animation on loading page and fixed minor issues.

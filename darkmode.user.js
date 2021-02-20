@@ -25,7 +25,6 @@
     $(window).on("beforeunload", function(){ $(window).scrollTop(0); });
 
     async function main(){
-
         $('#containerBoard').append($(`<div id="darken" name="darken" style="width:100%; height:100%; top:0; background-color:black; border:black; pointer-events:none; z-index:0; position:absolute; opacity:0.15">`));
         $('#boxChat').before($(`<div style="text-align:bottom">
 <input id="scroll" name="scroll" style="width:117px;" type="range"; min:0; max:100; value:15; position: relative;>

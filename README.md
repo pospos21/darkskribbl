@@ -1,7 +1,7 @@
 # darkskribbl
 Dark Mode for Skribbl.io. Four dark backgrounds to choose from and you can now darken the canvas to your liking!
 
-To install, simply get the Tampermonkey extension for Chrome and [click here!](https://github.com/pospos21/darkskribbl/raw/main/darkmode.user.js)
+**To install, simply get the Tampermonkey extension for Chrome and [click here!](https://github.com/pospos21/darkskribbl/raw/main/darkmode.user.js)**
 
 ----------
 

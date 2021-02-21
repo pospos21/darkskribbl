@@ -3,6 +3,9 @@ Dark Mode for Skribbl.io. Four dark backgrounds to choose from and you can now d
 
 To install, simply get the Tampermonkey extension for Chrome and [click here!](https://github.com/pospos21/darkskribbl/raw/main/darkmode.user.js)
 
+
+Note for FireFox users: There is a glitch with the canvas darkness slider where it will snap back to the previous value. What you have to do to avoid this is 1) start dragging the slider like normal 2) move your mouse away from the slider while your mouse is still down, and 3) release your mouse, then click one more time somewhere on the page.
+
 ![alt text](https://i.imgur.com/3jYS1ij.png)
 ![alt text](https://i.imgur.com/WlUsE6d.png)
 

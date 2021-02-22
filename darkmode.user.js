@@ -15,8 +15,9 @@
     var elem;
     var accessory = 'black';
     $.initialize('body', function(){
-        $(this).css('background-image', 'none');
-        $(this).css('background-color', accessory);
+        $(this)
+            .css('background-image', 'none')
+            .css('background-color', accessory);
         elem = $('<div id="overlay" style="background-color:black; opacity:1; position:fixed; pointer-events:none; top:0; z-index: 99999"></div>').appendTo(document.body);
     });
 
